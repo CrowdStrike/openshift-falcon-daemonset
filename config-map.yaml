@@ -1,0 +1,21 @@
+# This config map carries any falconctl options that are applied
+# before invoking falcon-sensor in the sensor-container.
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: falconctl-options
+  namespace: default
+data:
+  FALCONCTL_OPT_CID: ""
+  # FALCONCTL_OPT_AID: 
+  # FALCONCTL_OPT_APD:
+  # FALCONCTL_OPT_APH:
+  # FALCONCTL_OPT_APP:
+  # FALCONCTL_OPT_TRACE:
+  # FALCONCTL_OPT_FEATURE:
+  # FALCONCTL_OPT_MESSAGE_LOG:
+  # FALCONCTL_OPT_BILLING:
+  # FALCONCTL_OPT_ASSERT:
+  # FALCONCTL_OPT_MEMFAIL_GRACE_PERIOD:
+  # FALCONCTL_OPT_MEMFAIL_EVERY_N:
