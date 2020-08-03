@@ -55,3 +55,6 @@ Sample OpenShift DaemonSet to deploy CrowdStrike Falcon within Red Hat OpenShift
 `````
 * Deploy the Falcon DaemonSet
   * ``$ oc create -f crwd-falcon-agent.yaml``
+
+# Many Thanks
+Thank you to [Dinesh Subhraveti](https://www.linkedin.com/in/subhraveti/) whose initial code inspired this repo!
