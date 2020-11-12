@@ -7,7 +7,7 @@ metadata:
   name: falconctl-options
   namespace: default
 data:
-  FALCONCTL_OPT_CID: ""
+  FALCONCTL_OPT_CID: "YOURCID"
   # FALCONCTL_OPT_AID: 
   # FALCONCTL_OPT_APD:
   # FALCONCTL_OPT_APH:
