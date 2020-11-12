@@ -32,9 +32,9 @@ spec:
         
         #
         # For example, with Red Hat OpenShift's internal registry:
-        # image: image-registry.openshift-image-registry.svc:5000/default/falcon-sensor
+        # image: image-registry.openshift-image-registry.svc:5000/default/falcon-sensor:latest
         #
-        image: path.to.svc/yourimage
+        image: image-registry.openshift-image-registry.svc:5000/default/falcon-sensor:latest
         volumeMounts:
         - name: dev
           mountPath: /dev
@@ -57,7 +57,7 @@ spec:
       # are routed through k8s log driver.
       - name: log
         image: busybox
-        args: [/bin/sh, -c, 'tail -n1 -f /var/log/falcon-sensor.log']
+        args: [/bin/sh, -c, 'tail --retry -n1 -f /var/log/falcon-sensor.log']
         volumeMounts:
         - name: var-log
           mountPath: /var/log
